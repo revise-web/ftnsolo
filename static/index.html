@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <title>Mini 1v1 BuildFight</title>
+  <style>
+    body{margin:0;background:#111;color:#fff;font-family:sans-serif;overflow:hidden}
+    canvas{display:block;width:100vw;height:100vh}
+    #ui{position:absolute;top:10px;left:10px;font-size:18px}
+  </style>
+</head>
+<body>
+  <div id="ui">
+    <div>Kills <span id="k">0</span>/10</div>
+    <div>HP <span id="hp">100</span>  Shield <span id="sh">100</span></div>
+    <div>Mat <span id="mat">wood</span>  Type <span id="typ">wall</span></div>
+  </div>
+  <canvas id="c"></canvas>
+  <script src="static/client.js"></script>
+</body>
+</html>
