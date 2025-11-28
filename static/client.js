@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 /* Mini 1v1 build-fight – client WebGL très simplifié */
 const canvas = document.getElementById("c"), ctx = canvas.getContext("2d");
 canvas.width = window.innerWidth; canvas.height = window.innerHeight;

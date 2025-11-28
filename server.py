@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 Mini 1v1 build-fight – WebSocket + fichiers statiques
-Compatible Render (port injecté via $PORT)
+Bind 0.0.0.0 et port donné par Render via $PORT
 """
 import asyncio, json, time, random, math, pathlib, os
 import aiohttp
@@ -192,5 +192,6 @@ def create_app():
 
 # ---------- run ----------
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 8080))
+    port = int(os.environ.get("PORT", 10000))   # 10000 local, PORT fourni par Render
+    print(f"Starting server on 0.0.0.0:{port}")
     web.run_app(create_app(), host="0.0.0.0", port=port)
